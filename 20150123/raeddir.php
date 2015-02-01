@@ -1,7 +1,7 @@
 <?php
 	$sum = 0;
-	$dirname = 'phpMyAdmin';
-	$dir_handle = opebdir($dirname);
+	$dirname = '20150123zl';
+	$dir_handle = opendir($dirname);
 
 	echo '<table border = "0" align ="center" width="600" cellapcing="0" cellpadding="0">';
 	echo '<caption><h2>目录'.$dirname.'下面的内容</h2></caption>';
@@ -18,6 +18,7 @@
 			echo '<td>'.filesize($dirFile).'</td>';
 			echo '<td>'.filetype($dirFile).'</td>';
 			echo '<td>'.date("Y/n/t",filemtime($dirFile)).'</td>';
+			echo '</tr>';
 	}
 
 	echo '</table>';
