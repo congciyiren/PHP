@@ -1,0 +1,17 @@
+<script>
+	function createAjax(){
+		var request=false;
+
+		if(window.XMLHttpRequest){
+			alert("我不是IE，但有可能是IE8、IE7");
+		}else if(window.ActiveXObject){
+			alert("我是IE的低版本 ");
+		}
+
+
+
+		return request;
+	}
+
+	var ajax=createAjax();
+</script>

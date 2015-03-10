@@ -1,0 +1,19 @@
+<script src="ajax.js"></script>
+
+<script>
+	var ajax=Ajax();
+/*	ajax.get("server.php?username=zhangsan&email=aaa@bbb",function(data){
+		alert(data);
+
+	});
+*/
+
+ajax.post("server.php","username=value&aaa=bb",function(data){
+	alert(data);
+});
+
+
+/*ajax.post("server.php",{name:"zs",age:10,sex:"nan"},function(data){alert(data);
+});
+*/
+</script>
